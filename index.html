@@ -20,6 +20,7 @@
 
 <body>
 
+    <!-- NAV BAR-->
     <div class="navbar">
         <ul class="nav-ul">
             <!-- <li><a href="index-en.html" class="nav"> <h5>EN</h5> </a></li> -->
@@ -48,11 +49,11 @@
     </div>
     <div class="progress-bar" id="myBar"></div>
 
+    <!-- NAV BAR MINI-->
     <div class="navbar-mini">
         <button class="minimenuIcon" onclick="menu_open()"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
 
-    <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left nav-mini" id="mySidebar">
         <a href="javascript:void(0)" onclick="menu_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
         <a href="#about" onclick="menu_close()" class="w3-bar-item w3-button">O mne</a>
@@ -61,6 +62,7 @@
         <a href="#contact" onclick="menu_close()" class="w3-bar-item w3-button">Kontakt</a>
     </nav>
 
+    <!-- TITLE -->
     <div class="title d0" id="titlePhoto">
         <div class="titleText">
             <p class="name">
@@ -86,6 +88,7 @@
         <img src="images/profilFoto.jpg" alt="profil foto" class="profilFoto">
     </div>
 
+    <!-- ABOUT -->
     <div class="d1">
         <span id="about" class="spanPad"></span>
         <h1>O MNE</h1>
@@ -107,6 +110,7 @@
 
     </div>
 
+    <!-- ABOUT - TIMELINE + SKILLS -->
     <div class="d0">
         <br> <br>
         <div class="aboutNav">
@@ -311,6 +315,7 @@
         <br><br>
     </div>
 
+    <!-- PROJECTS -->
     <div class="d1">
         <span id="projects" class="spanPad"></span>
         <h1>PROJEKTY</h1>
@@ -385,7 +390,7 @@
 
     </div>
 
-
+    <!-- COMPETITIONS -->
     <div class="d0">
         <span id="competitions" class="spanPad"></span>
         <h1>SÚŤAŽE</h1>
@@ -482,6 +487,7 @@
 
     </div>
 
+    <!-- CONTACTS -->
     <div class="d1">
         <span id="contact" class="spanPad"></span>
         <h1>KONTAKT</h1>
@@ -521,7 +527,8 @@
         <a href="#titlePhoto"><i class="fa fa-arrow-circle-up w3-xxlarge arrow" aria-hidden="true"></i></a>
     </div>
 
-    <!-- modal projekty -->
+    <!-- MODALS -->
+    <!-- AI web -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(0)">&times;</span>
@@ -552,6 +559,7 @@
         </div>
     </div>
 
+    <!-- sweet dreams -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(1)">&times;</span>
@@ -572,6 +580,7 @@
         </div>
     </div>
 
+    <!-- OpenMV camera -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(2)">&times;</span>
@@ -587,6 +596,7 @@
         </div>
     </div>
 
+    <!-- RCJ -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(3)">&times;</span>
@@ -609,6 +619,7 @@
         </div>
     </div>
 
+    <!-- blikac -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(4)">&times;</span>
@@ -625,6 +636,7 @@
         </div>
     </div>
 
+    <!-- junior internet -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(5)">&times;</span>
@@ -655,6 +667,7 @@
         </div>
     </div>
 
+    <!-- robocup junior -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(6)">&times;</span>
@@ -687,6 +700,7 @@
         </div>
     </div>
 
+    <!-- spongia -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(7)">&times;</span>
@@ -710,6 +724,7 @@
         </div>
     </div>
 
+    <!-- robo rave -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(8)">&times;</span>
@@ -737,6 +752,7 @@
         </div>
     </div>
 
+    <!-- rba -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(9)">&times;</span>
@@ -756,6 +772,7 @@
         </div>
     </div>
 
+    <!-- g-robot -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(10)">&times;</span>
@@ -772,6 +789,7 @@
                 Súťaže som sa zúčastnila iba raz, kedže iba vtedy som mohla. Spolu s Lenkou Hake sme zo stavebnice Lego Mindstorms vytvorili plne funkčnú kravu a s teliatkom. Za tento projekt sme získali 1. miesto.
             </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/DGaDrInGMrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
             <img src="images/diplomy/grobot.jpg" alt="web screenshot" class="modal-img">
             <br><br>
             <button onclick="location.href='https://gvpt.sk/component/search/?searchword=G-robot&searchphrase=all&Itemid=167'" class="modal-btn" target="_blank">WEB</button> <br>
@@ -779,6 +797,7 @@
         </div>
     </div>
 
+    <!-- fll -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(11)">&times;</span>
@@ -803,6 +822,7 @@
         </div>
     </div>
 
+    <!-- rainbow bridge -->
     <div class="modal">
         <div class="modal-content">
             <span class="close_m" onclick="close_modal(12)">&times;</span>
