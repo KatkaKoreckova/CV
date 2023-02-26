@@ -517,12 +517,100 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.-left-5 {
+  left: -1.25rem;
+}
+
+.top-\[400px\] {
+  top: 400px;
+}
+
+.top-\[500px\] {
+  top: 500px;
+}
+
+.top-\[550px\] {
+  top: 550px;
+}
+
+.-left-14 {
+  left: -3.5rem;
+}
+
+.-bottom-4 {
+  bottom: -1rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.left-\[70\%\] {
+  left: 70%;
+}
+
+.left-\[90\%\] {
+  left: 90%;
+}
+
+.left-\[80\%\] {
+  left: 80%;
+}
+
+.top-\[300px\] {
+  top: 300px;
+}
+
+.left-\[85\%\] {
+  left: 85%;
+}
+
+.top-\[185px\] {
+  top: 185px;
+}
+
+.left-\[81\%\] {
+  left: 81%;
+}
+
+.top-\[150px\] {
+  top: 150px;
+}
+
 .z-40 {
   z-index: 40;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.-z-40 {
+  z-index: -40;
 }
 
 .mx-auto {
@@ -532,6 +620,10 @@ video {
 
 .ml-\[6px\] {
   margin-left: 6px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .block {
@@ -544,6 +636,38 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-\[5\%\] {
+  height: 5%;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[15\%\] {
+  height: 15%;
+}
+
+.h-\[13\%\] {
+  height: 13%;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .w-24 {
@@ -561,6 +685,42 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[13\%\] {
+  width: 13%;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .max-w-\[90\%\] {
@@ -660,6 +820,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
@@ -679,6 +843,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -691,8 +860,16 @@ video {
   font-weight: 600;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-gray-500 {

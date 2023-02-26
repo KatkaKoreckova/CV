@@ -15,8 +15,17 @@
 </head>
 
 <body>
+    
+    <!-- Decor -->
+    <div class="absolute w-[200px] h-[200px] top-[150px] left-[81%] z-0">
+        <img src="images/4.png" alt="decor" class="w-full">
+    </div>
+    <div class="absolute w-[250px] h-[250px] top-[550px] -left-14 z-0">
+        <img src="images/2.png" alt="decor" class="w-full">
+    </div>
+    
     <!-- Navbar -->
-    <nav class="z-50 bg-white">
+    <nav class="z-50 bg-white relative">
         <div class="fixed w-full py-5" id="navbar">
             <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
                 <!-- Logo -->
@@ -73,7 +82,7 @@
         </div>
     </div>
     
-    <div id="hero" class="full-screen flex flex-col-reverse md:flex-row justify-around max-w-[90%] mx-auto items-stretch">
+    <div id="hero" class="z-40 relative full-screen flex flex-col-reverse md:flex-row justify-around max-w-[90%] mx-auto items-stretch">
         <div class="max-w-[90%] mx-auto md:w-[40%] self-center">
             <div class="flex flex-col space-y-10">
                 <div>
@@ -91,8 +100,8 @@
         </div>
     </div>
     
-    <div id="services">
-        aaa
+    <div id="services" class="z-40 relative max-w-[90%] mx-auto mt-3">
+        <h1 class="text-4xl tracking-wider font-black text-center">Services</h1>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
