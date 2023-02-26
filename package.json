@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatkaMarcincakova/CV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatkaMarcincakova/CV/issues"
+  },
+  "homepage": "https://github.com/KatkaMarcincakova/CV#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
