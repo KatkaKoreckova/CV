@@ -16,7 +16,7 @@
 
 <body class="overflow-x-hidden">
     
-    <!-- Decor 
+    <!-- Decor -->
     <div id="decorBehindTitlePhoto" class="absolute w-[200px] h-[200px] z-0">
         <img src="images/4.png" alt="decor" class="w-full">
     </div>
@@ -29,7 +29,13 @@
     <div id="decorHeroServices2" class="absolute w-[150px] h-[150px] z-0">
         <img src="images/7.png" alt="decor" class="w-full">
     </div>
-    -->
+    <div id="decorAbout" class="absolute w-[300px] h-[100px] z-0">
+        <img src="images/7.png" alt="decor" class="w-full">
+    </div>
+    <div id="decorEdu" class="absolute w-[300px] h-[300px] z-0">
+        <img src="images/3.png" alt="decor" class="w-full">
+    </div>
+    
     <!-- Navbar -->
     <nav class="z-50  relative">
         <div class="fixed w-full py-5 bg-white shadow-md" id="navbar">
@@ -168,39 +174,39 @@
     
     <div id="about" class="z-40 relative max-w-[90%] mx-auto mt-20">
         <h3 class="text-sm tracking-wider font-medium text-center text-purple">ABOUT ME</h1>
-        <h1 class="text-5xl tracking-wider font-black text-center mt-2">LET ME INTRODUCE MYSELF...</h1>
+        <h1 class="text-3xl xs:text-5xl tracking-wider font-black text-center mt-2">LET ME INTRODUCE MYSELF...</h1>
         
-        <div class="flex flex-row justify-center space-x-2 items-stretch mt-10">
-            <div class="w-[45%]">
-                <img src="images/ja-sm.jpg" alt="me rba" class="w-1/2 mx-auto rounded-lg">
-            </div>
+        <div class="flex flex-col m:flex-row m:justify-center m:space-x-2 m:items-stretch mt-10">
             <div class="w-[45%] self-center">
-                <span class="text-lg">Hi, I'm</span><br>
-                <span class="text-purple text-3xl tracking-wider font-bold">Katarína MARCINČÁKOVÁ</span> <br>
-                <div class="mt-2 text-base text-gray-500">
+                <img src="images/ja-sm.jpg" alt="me rba" class="w-3/4 lg:w-2/3 l:w-1/2 mx-auto rounded-lg">
+            </div>
+            <div class="w-[80%] m:w-[45%] self-center">
+                <span class="text-base s:text-lg">Hi, I'm</span><br>
+                <span class="text-purple text-xl s:text-3xl tracking-wider font-bold">Katarína MARCINČÁKOVÁ</span> <br>
+                <div class="mt-2 text-sm s:text-base text-gray-500">
                     I am front-end developer and UX/UI designer. 
                     In my free time, I work with Arduino and ESP32, play the piano, and do sports. I also volunteer at RBA&nbsp;<a href="https://robotickybattle.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a> and LSTME&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a>. For 6 years, I was a part of the school robotics team, with which we participated in many competitions
                 </div>
-                <div class="mt-10 flex flex-col text-sm space-y-2">
+                <div class="mt-10 flex flex-col text-xs s:text-sm space-y-2">
                     <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" class="no-underline">
-                        <h3 class="inline-flex items-baseline"><i class="fa-solid fa-at self-center text-yellow"></i>&nbsp;marcincakova.katarina@gmail.com</h3>
+                        <div class="inline-flex items-baseline"><i class="fa-solid fa-at self-center text-yellow"></i>&nbsp;marcincakova.katarina@gmail.com</div>
                     </a>
                     <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank" class="no-underline">
-                        <h3 class="inline-flex items-baseline"><i class="fa-brands fa-linkedin-in self-center text-yellow"></i>&nbsp;in/katarinamarcincakova</h3>
+                        <div class="inline-flex items-baseline"><i class="fa-brands fa-linkedin-in self-center text-yellow"></i>&nbsp;in/katarinamarcincakova</div>
                     </a>
                     <a href="https://github.com/KatkaMarcincakova" target="_blank" class="no-underline">
-                        <h3 class="inline-flex items-baseline"><i class="fa-brands fa-github self-center text-yellow"></i>&nbsp;KatkaMarcincakova</h3>
+                        <div class="inline-flex items-baseline"><i class="fa-brands fa-github self-center text-yellow"></i>&nbsp;KatkaMarcincakova</div>
                     </a>
                 </div>
             </div>
         </div>
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-20 w-[80%] mx-auto">
-            <div class="card mt-4">
-                <h3 class="text-3xl font-bold tracking-wider text-purple">Skills</h3>
+            <div class="card mt-4" id="skillsCard">
+                <h3 class="text-xl xxs:text-3xl font-bold tracking-wider text-purple">Skills</h3>
                 
                 <h4 class="text-lg m-0 mt-7">Front-end, Back-end</h4>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
                     <div>
                         <h5 class="font-light">C#</h5>
                         <div class="w-full bg-gray-200 h-2 rounded-md">
@@ -264,7 +270,7 @@
                 </div>
                 
                 <h4 class="text-lg m-0 mt-7">Robotics</h4>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
                     <div>
                         <h5 class="font-light">Arduino / ESP32</h5>
                         <div class="w-full bg-gray-200 h-2 rounded-md">
@@ -292,7 +298,7 @@
                 </div>
                 
                 <h4 class="text-lg m-0 mt-7">Other</h4>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
                     <div>
                         <h5 class="font-light">Figma</h5>
                         <div class="w-full bg-gray-200 h-2 rounded-md">
@@ -314,16 +320,16 @@
                 </div>
             </div>
             
-            <div class="card mt-4">
-                <h3 class="text-3xl font-bold tracking-wider text-purple">Education</h3>
+            <div class="card mt-4" id="eduCard">
+                <h3 class="text-xl xxs:text-3xl font-bold tracking-wider text-purple">Education</h3>
                 
                 <div class="mt-7 flex flex-row space-x-3">
                     <div class="text-pink text-lg">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <div>
-                        <span class="font-medium text-lg">Informatics, BC</span> <br/>
-                        <span class="text-sm text-gray-500">2022 - present, Technical University of Kosice</span>
+                        <span class="font-medium text-sm xxs:text-lg">Informatics, BC</span> <br/>
+                        <span class="text-xs xxs:text-sm text-gray-500">2022 - present, Technical University of Kosice</span>
                     </div>
                 </div>
                 
@@ -332,8 +338,8 @@
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
                     <div>
-                        <span class="font-medium text-lg">Technical Support Fundamentals</span> <br/>
-                        <span class="text-sm text-gray-500">2020, Google online course</span>
+                        <span class="font-medium text-sm xxs:text-lg">Technical Support Fundamentals</span> <br/>
+                        <span class="text-xs xxs:text-sm text-gray-500">2020, Google online course</span>
                     </div>
                 </div>
                 
@@ -342,18 +348,18 @@
                         <i class="fa-solid fa-laptop-code"></i>
                     </div>
                     <div>
-                        <span class="font-medium text-lg">LSTME</span> <br/>
-                        <span class="text-sm text-gray-500">2016 - 2019, IT camp&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a></span>
+                        <span class="font-medium text-sm xxs:text-lg">LSTME</span> <br/>
+                        <span class="text-xs xxs:text-sm text-gray-500">2016 - 2019, IT camp&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a></span>
                     </div>
                 </div>
                 
                 <div class="mt-7 flex flex-row space-x-3">
-                    <div class="text-pink text-lg">
+                    <div class="text-pink text-sm xxs:text-lg">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <div>
                         <span class="font-medium text-lg">High school</span> <br/>
-                        <span class="text-sm text-gray-500">2012 - 2020, Gymnázium Alejová 1, Košice</span>
+                        <span class="text-xs xxs:text-sm text-gray-500">2012 - 2020, Gymnázium Alejová 1, Košice</span>
                     </div>
                 </div>
             </div>
