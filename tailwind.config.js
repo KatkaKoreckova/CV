@@ -16,11 +16,11 @@ module.exports = {
         },
         extend: {
             colors: {
-                darkPurple: 'hsl(274, 66%, 15%)',
-                lightPurple: 'hsl(272, 98%, 38%)',
-                smokeDarkBlue: 'hsl(226, 39%, 31%)',
-                pink: 'hsl(302, 42%, 55%)',
-                raspberry: 'hsl(338, 100%, 54%)'
+                purple: 'hsl(241, 61%, 57%)',
+                darkPurple: 'hsl(241, 61%, 40%)',
+                lightPurple: 'hsl(240, 61%, 85%)',
+                yellow: 'hsl(42, 100%, 48%)',
+                pink: 'hsl(354, 68%, 78%)'
             }
         },
     },
