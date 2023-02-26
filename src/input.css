@@ -120,4 +120,5 @@ html {
     @apply px-4;
     @apply py-5;
     @apply rounded-lg;
+    @apply bg-white;
 }
