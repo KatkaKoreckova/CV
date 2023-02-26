@@ -87,9 +87,30 @@ html {
 /* Buttons */
 
 .important-btn {
-    box-shadow: rgba(81, 78, 212, 0.25) 0px 54px 55px, rgba(81, 78, 212, 0.12) 0px -12px 30px, rgba(81, 78, 212, 0.12) 0px 4px 6px, rgba(81, 78, 212, 0.17) 0px 12px 13px, rgba(81, 78, 212, 0.09) 0px -3px 5px;
+    box-shadow:  rgba(81, 78, 212, 0.12) 0px -12px 30px, rgba(81, 78, 212, 0.12) 0px 4px 6px, rgba(81, 78, 212, 0.17) 0px 12px 13px, rgba(81, 78, 212, 0.09) 0px -3px 5px;
     @apply bg-purple;
     @apply text-white;
     @apply hover:bg-darkPurple;
     transition: all ease-in 100ms;
+}
+
+.secondary-btn {
+    box-shadow:  rgba(245, 171, 0, 0.12) 0px -12px 30px, rgba(245, 171, 0, 0.12) 0px 4px 6px, rgba(245, 171, 0, 0.17) 0px 12px 13px, rgba(245, 171, 0, 0.09) 0px -3px 5px;
+    @apply bg-yellow;
+    @apply text-white;
+    @apply hover:bg-darkYellow;
+    transition: all ease-in 100ms;
+}
+
+.badge {
+    @apply rounded-lg;
+    @apply p-[6px];
+    @apply border-2;
+    @apply border-yellow;
+    @apply bg-lightYellow;
+    @apply text-yellow;
+    @apply text-xs;
+    @apply font-medium;
+    @apply border-4;
+    @apply border-yellow;
 }
