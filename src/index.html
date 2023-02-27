@@ -16,7 +16,7 @@
 
 <body class="overflow-x-hidden">
     
-    <!-- Decor -->
+    <!-- Decor 
     <div id="decorBehindTitlePhoto" class="absolute w-[200px] h-[200px] z-0">
         <img src="images/4.png" alt="decor" class="w-full">
     </div>
@@ -35,7 +35,7 @@
     <div id="decorEdu" class="absolute w-[300px] h-[300px] z-0">
         <img src="images/3.png" alt="decor" class="w-full">
     </div>
-    
+    -->
     <!-- Navbar -->
     <nav class="z-50  relative">
         <div class="fixed w-full py-5 bg-white shadow-md" id="navbar">
@@ -171,7 +171,6 @@
         </div>
     </div>
      
-    
     <div id="about" class="z-40 relative max-w-[90%] mx-auto mt-20">
         <h3 class="text-sm tracking-wider font-medium text-center text-purple">ABOUT ME</h1>
         <h1 class="text-3xl xs:text-5xl tracking-wider font-black text-center mt-2">LET ME INTRODUCE MYSELF...</h1>
@@ -367,6 +366,92 @@
         
     </div>
     
+    
+    <div id="projects" class="z-40 relative max-w-[90%] mx-auto mt-20">
+        <h3 class="text-sm tracking-wider font-medium text-center text-purple">PROJECTS</h1>
+        <h1 class="text-3xl xs:text-5xl tracking-wider font-black text-center mt-2">MY WORK</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5 w-[80%] mx-auto">
+            <div class="prod-card mt-4">
+                <div class="relative">
+                    <img src="images/nonogram/1.png" alt="nonogram example" class="nonogram rounded-lg">
+                    <img src="images/nonogram/2.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
+                    <img src="images/nonogram/3.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
+                    <img src="images/nonogram/4.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
+                    <img src="images/nonogram/5.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
+                    <img src="images/nonogram/6.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
+                        <button onclick="carouselPrev('nonogram', 0)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                    </h3>
+                    <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
+                        <button onclick="carouselNext('nonogram', 0)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                    </h3>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Nonogram</h3>
+                    <h5 class="text-gray-500">
+                        Web game for school project.
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        ASP.NET&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JS&nbsp;&nbsp;Bootstrap
+                    </h6>
+                </div>
+            </div>
+            <!--
+            <div class="prod-card mt-4">
+                <div id="devity-carousel" class="relative" data-carousel="static">
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                            <img src="images/devity/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-t-lg" alt="devity example">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="images/devity/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-t-lg" alt="devity example">
+                        </div>
+                    </div>
+                    
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    </div>
+                    
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                
+                <div class="px-4 pt-3 pb-5">
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">DEVITY Software</h3>
+                    <h5 class="text-gray-500">
+                        Landing page for software company in which I help with front-end.
+                    </h5>
+                    <h6 class="text-lightPurple text-sm mt-4">
+                        HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JS&nbsp;&nbsp;TailwindCSS
+                    </h6>
+                    <a href="https://devitysw.github.io/DevityWeb/" target="_blank" class="text-yellow text-sm mt-4 no-underline">
+                        Visit page&nbsp;<i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            -->
+        </div>
+        
+        <br><br>
+        
+        
+        
+    </div>
+    
     <br>
     
     <footer class="w-full p-2 mt-3 bg-pink">
@@ -390,5 +475,6 @@
     <script src="burger-menu.js"></script>
     <script src="decor.js"></script>
     <script src="script.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>

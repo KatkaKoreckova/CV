@@ -115,10 +115,13 @@ html {
     @apply border-yellow;
 }
 
-.card {
+.card, .prod-card {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    @apply px-4;
-    @apply py-5;
     @apply rounded-lg;
     @apply bg-white;
+}
+
+.card {
+    @apply px-4;
+    @apply py-5;
 }
