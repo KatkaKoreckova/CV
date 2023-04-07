@@ -1,5 +1,5 @@
-// nonogram devity muxly rba church lstme olimax ewa kitech
-let indexes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+//livity  devity muxly nonogram rba church lstme olimax ewa kitech
+let indexes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 function carouselNext(classN, index) {
     var n = document.getElementsByClassName(classN);
     n[indexes[index]].classList.add('hidden');
