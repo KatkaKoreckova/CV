@@ -1021,7 +1021,7 @@ video {
 
 .text-lightPurple {
   --tw-text-opacity: 1;
-  color: hsl(240 61% 85% / var(--tw-text-opacity));
+  color: hsl(240 61% 70% / var(--tw-text-opacity));
 }
 
 .text-pink {

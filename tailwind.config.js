@@ -18,7 +18,7 @@ module.exports = {
             colors: {
                 purple: 'hsl(241, 61%, 57%)',
                 darkPurple: 'hsl(241, 61%, 40%)',
-                lightPurple: 'hsl(240, 61%, 85%)',
+                lightPurple: 'hsl(240, 61%, 70%)',
                 darkYellow: 'hsl(42, 100%, 40%)',
                 yellow: 'hsl(42, 100%, 48%)',
                 lightYellow: 'hsl(42, 100%, 95%)',

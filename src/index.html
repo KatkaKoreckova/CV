@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2a28a4"/>
+    <meta name="description" content="Katarina Marcincakova's online portfolio with her projects and skills.">
     <link rel="stylesheet" href="main.css">
     <title>Katarina Marcincakova</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/d.png" id="tabFavicon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" id="tabFavicon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
@@ -46,36 +48,36 @@
             <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
                 <!-- Logo -->
                 <div class="pt-2 self-center">
-                    <button onclick="scrollToSection('#hero')" class="outline-none p-0 w-24 font-bold text-2xl">
+                    <button onclick="scrollToSection('#hero')" class="outline-none p-0 w-24 font-bold text-2xl" aria-label="navigate to home button">
                         <span class="text-purple">K</span>M
                     </button>
                 </div>
                 <!-- Menu Items -->
                 <div class="hidden space-x-6 self-center text-sm font-normal md:flex">
                     <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#services')" class="border-0 bg-transparent">
+                        <button onclick="scrollToSection('#services')" class="border-0 bg-transparent" aria-label="navigate to services button">
                             SERVICES
                         </button>
                     </div>
                     <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#about')" class="border-0 bg-transparent">
+                        <button onclick="scrollToSection('#about')" class="border-0 bg-transparent" aria-label="navigate to about me button">
                             ABOUT
                         </button>
                     </div>
                     <div class="self-center animated-underline">
-                        <button onclick="scrollToSection('#projects')" class="border-0 bg-transparent">
+                        <button onclick="scrollToSection('#projects')" class="border-0 bg-transparent" aria-label="navigate to projects button">
                             PROJECTS
                         </button>
                     </div>
                     <div class="self-center">
-                        <button onclick="scrollToSection('#contact')" class="border-0 p-3 rounded-xl important-btn">
+                        <button onclick="scrollToSection('#contact')" class="border-0 p-3 rounded-xl important-btn"aria-label="navigate to contact button">
                             CONTACT
                         </button>
                     </div>
                 </div>
 
                 <!-- Hamburger Icon -->
-                <button id="menu-btn" class="block hamburger self-center md:hidden focus:outline-none">
+                <button id="menu-btn" class="block hamburger self-center md:hidden focus:outline-none" aria-label="toggle mobile menu button">
                     <span class="hamburger-top"></span>
                     <span class="hamburger-middle"></span>
                     <span class="hamburger-bottom"></span>
@@ -87,13 +89,13 @@
     <div id="menu" class="full-screen hidden z-50 fixed backdrop-blur-sm">
         <div class="font-semibold tracking-widest bg-white">
             <div class="flex flex-col max-w-[90%] mx-auto">
-                <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">SERVICES</button>
+                <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to services button">SERVICES</button>
                 <hr class="w-full border-0 border-b border-gray-500">
-                <button onclick="scrollToSection('#about')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">ABOUT</button>
+                <button onclick="scrollToSection('#about')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to about me button">ABOUT</button>
                 <hr class="w-full border-0 border-b border-gray-500">
-                <button onclick="scrollToSection('#projects')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">PROJECTS</button>
+                <button onclick="scrollToSection('#projects')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to projects button">PROJECTS</button>
                 <hr class="w-full border-0 border-b border-gray-500">
-                <button onclick="scrollToSection('#contact')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">CONTACT</button>
+                <button onclick="scrollToSection('#contact')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to contact button">CONTACT</button>
             </div>
         </div>
     </div>
@@ -108,7 +110,7 @@
                             <div class="text-8xl font-bold text-purple">KATKA</div>
                             <div class="text-sm text-gray-500 ml-[6px]">Front-end developer, UX/UI designer</div>
                         </div>
-                        <button onclick="scrollToSection('#projects')" class="p-3 rounded-xl secondary-btn w-max">
+                        <button onclick="scrollToSection('#projects')" class="p-3 rounded-xl secondary-btn w-max" aria-label="navigate to projects button">
                             My work
                         </button>
                     </div>
@@ -133,7 +135,7 @@
                 </div>
             </div>
             <div class="w-[40%] sm:w-1/4 mx-auto mt-4">
-                <button onclick="scrollToSection('#projects')" class="p-2 rounded-xl secondary-btn w-full">
+                <button onclick="scrollToSection('#projects')" class="p-2 rounded-xl secondary-btn w-full" aria-label="navigate to projects button">
                     My work
                 </button>
             </div>
@@ -188,16 +190,16 @@
                 <span class="text-purple text-xl s:text-3xl tracking-wider font-bold">Katarína MARCINČÁKOVÁ</span> <br>
                 <div class="mt-2 text-sm s:text-base text-gray-500">
                     I am a front-end developer and an UX/UI designer. 
-                    In my free time, I build stuff with Arduino and ESP32, play the piano, and do sports. I also volunteer at RBA&nbsp;<a href="https://robotickybattle.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a> and LSTME&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a>. For 6 years, I was a part of the school robotics team and we participated in many competitions.
+                    In my free time, I build stuff with Arduino and ESP32, play the piano, and do sports. I also volunteer at RBA&nbsp;<a href="https://robotickybattle.sk/" target="_blank" aria-label="Navigates to RBA website" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a> and LSTME&nbsp;<a href="https://lstme.sk/" target="_blank" aria-label="Navigates to LSTME website" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a>. For 6 years, I was a part of the school robotics team and we participated in many competitions.
                 </div>
                 <div id="contact" class="mt-12 flex flex-col text-xs s:text-sm space-y-2">
-                    <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" class="no-underline">
+                    <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" class="no-underline" aria-label="mail to my email address">
                         <div class="inline-flex items-baseline"><i class="fa-solid fa-at self-center text-yellow"></i>&nbsp;marcincakova.katarina@gmail.com</div>
                     </a>
-                    <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank" class="no-underline">
+                    <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank" class="no-underline" aria-label="Open my LinkedIn profile in the new tab">
                         <div class="inline-flex items-baseline"><i class="fa-brands fa-linkedin-in self-center text-yellow"></i>&nbsp;in/katarinamarcincakova</div>
                     </a>
-                    <a href="https://github.com/KatkaMarcincakova" target="_blank" class="no-underline">
+                    <a href="https://github.com/KatkaMarcincakova" target="_blank" class="no-underline" aria-label="Open my GitHub profile in the new tab">
                         <div class="inline-flex items-baseline"><i class="fa-brands fa-github self-center text-yellow"></i>&nbsp;KatkaMarcincakova</div>
                     </a>
                 </div>
@@ -365,7 +367,7 @@
                     </div>
                     <div>
                         <span class="font-medium text-sm xxs:text-lg">LSTME</span> <br/>
-                        <span class="text-xs xxs:text-sm text-gray-500">2016 - 2019, IT camp&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"><i class="fa-solid fa-link"></i></a></span>
+                        <span class="text-xs xxs:text-sm text-gray-500">2016 - 2019, IT camp&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"  aria-label="Navigate to LSTME website"><i class="fa-solid fa-link"></i></a></span>
                     </div>
                 </div>
                 
@@ -400,15 +402,15 @@
                     <img src="images/livity/7.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
                     <img src="images/livity/8.png" alt="livity example" class="livity w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-blue-400 rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('livity', 0)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('livity', 0)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-blue-400 rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('livity', 0)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('livity', 0)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right" aria-label="browse carousel with projects photo"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Livity&nbsp;<a href="https://devpost.com/software/livity" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Livity&nbsp;<a href="https://devpost.com/software/livity" target="_blank" class="no-underline text-sm text-lightPurple" aria-label="Navigates to project page"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         15-minute city project
                     </h5>
@@ -423,15 +425,15 @@
                     <img src="images/devity/1.png" alt="devity example" class="devity rounded-t-lg">
                     <img src="images/devity/2.png" alt="devity example" class="devity w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('devity', 1)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('devity', 1)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('devity', 1)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('devity', 1)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">DEVITY Software&nbsp;<a href="https://devitysw.github.io/DevityWeb/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">DEVITY Software&nbsp;<a href="https://devitysw.github.io/DevityWeb/" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Web page for a software company.
                     </h5>
@@ -446,15 +448,15 @@
                     <img src="images/muxly/1.png" alt="muxly example" class="muxly rounded-t-lg">
                     <img src="images/muxly/2.png" alt="muxly example" class="muxly w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('muxly', 2)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('muxly', 2)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('muxly', 2)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('muxly', 2)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">MUXLY&nbsp;<a href="https://www.figma.com/file/4KpT2IpXBEkRPD9MDAgvGJ/N%C3%A1vrh-FE?node-id=0%3A1&t=wIFgs523hPC0coJv-1" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">MUXLY&nbsp;<a href="https://www.figma.com/file/4KpT2IpXBEkRPD9MDAgvGJ/N%C3%A1vrh-FE?node-id=0%3A1&t=wIFgs523hPC0coJv-1" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Front-end & design for an e-commerce app.
                     </h5>
@@ -473,10 +475,10 @@
                     <img src="images/nonogram/5.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
                     <img src="images/nonogram/6.png" alt="nonogram example" class="nonogram w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('nonogram', 3)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('nonogram', 3)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('nonogram', 3)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('nonogram', 3)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
@@ -496,15 +498,15 @@
                     <img src="images/mysticaldreams/1.png" alt="mysticaldreams example" class="mysticaldreams rounded-t-lg">
                     <img src="images/mysticaldreams/2.png" alt="mysticaldreams example" class="mysticaldreams w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('mysticaldreams', 10)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('mysticaldreams', 10)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('mysticaldreams', 10)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('mysticaldreams', 10)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Mystical Dreams&nbsp;<a href="https://katkamarcincakova.github.io/SleepyRPG_web/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Mystical Dreams&nbsp;<a href="https://katkamarcincakova.github.io/SleepyRPG_web/" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Website for our game Mystical Dreams
                     </h5>
@@ -520,15 +522,15 @@
                     <img src="images/rba/3.png" alt="rba example" class="rba w-full rounded-t-lg hidden">
                     <img src="images/rba/2.png" alt="rba example" class="rba w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('rba', 4)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('rba', 4)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('rba', 4)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('rba', 4)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Robo Challenge Calculator&nbsp;<a href="https://katkamarcincakova.github.io/Challenge-calculator/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Robo Challenge Calculator&nbsp;<a href="https://katkamarcincakova.github.io/Challenge-calculator/" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Online calculator for the competition Robotický Battle na Alejovej - category Challenge
                     </h5>
@@ -545,10 +547,10 @@
                     <img src="images/church/2.png" alt="church example" class="church w-full rounded-t-lg hidden">
                     <img src="images/church/3.png" alt="church example" class="church w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('church', 5)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('church', 5)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('church', 5)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('church', 5)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
@@ -569,15 +571,15 @@
                     <img src="images/lstme/2.png" alt="lstme example" class="lstme w-full rounded-t-lg hidden">
                     <img src="images/lstme/3.png" alt="lstme example" class="lstme w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('lstme', 6)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('lstme', 6)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('lstme', 6)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('lstme', 6)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Haxee&nbsp;<a href="https://katkamarcincakova.github.io/BP-web_prototype/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Haxee&nbsp;<a href="https://katkamarcincakova.github.io/BP-web_prototype/" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Design prototype of a tracking system for LSTME camp - competition Hi-Fi Ralley.
                     </h5>
@@ -593,15 +595,15 @@
                     <img src="images/olimax/3.png" alt="olimax example" class="olimax w-full rounded-t-lg hidden">
                     <img src="images/olimax/2.png" alt="olimax example" class="olimax w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('olimax', 7)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('olimax', 7)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('olimax', 7)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('olimax', 7)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Olimax&nbsp;<a href="https://olimax.sk/" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">Olimax&nbsp;<a href="https://olimax.sk/" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         Front-end for a car rental company web app.
                     </h5>
@@ -617,10 +619,10 @@
                     <img src="images/ewa/2.png" alt="ewa example" class="ewa w-full rounded-t-lg hidden">
                     <img src="images/ewa/3.png" alt="ewa example" class="ewa w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('ewa', 8)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('ewa', 8)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('ewa', 8)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('ewa', 8)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
@@ -640,15 +642,15 @@
                     <img src="images/kitech/1.png" alt="kitech example" class="kitech rounded-t-lg">
                     <img src="images/kitech/2.png" alt="kitech example" class="kitech w-full rounded-t-lg hidden">
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-0 h-full w-1/2">
-                        <button onclick="carouselPrev('kitech', 9)" class="h-full w-full text-left px-2"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button onclick="carouselPrev('kitech', 9)" class="h-full w-full text-left px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-left"></i></button>
                     </h3>
                     <h3 class="absolute text-2xl text-white rounded-full bg-transparent top-0 left-1/2 h-full w-1/2">
-                        <button onclick="carouselNext('kitech', 9)" class="h-full w-full text-right px-2"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button onclick="carouselNext('kitech', 9)" class="h-full w-full text-right px-2" aria-label="browse carousel with projects photo"><i class="fa-solid fa-chevron-right"></i></button>
                     </h3>
                 </div>
                 
                 <div class="px-4 pt-3 pb-5">
-                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">KiTECH&nbsp;<a href="https://www.figma.com/file/ko6EOr88ey4DcpAskP4rta/eshop?node-id=3%3A204&t=sAECnZmj5uhuZic0-1" target="_blank" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
+                    <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">KiTECH&nbsp;<a href="https://www.figma.com/file/ko6EOr88ey4DcpAskP4rta/eshop?node-id=3%3A204&t=sAECnZmj5uhuZic0-1" target="_blank" aria-label="Navigates to project page" class="no-underline text-sm text-lightPurple"><i class="fa-solid fa-link"></i></a></h3>
                     <h5 class="text-gray-500">
                         E-shop design.
                     </h5>
@@ -665,13 +667,13 @@
     
     <footer id="footer" class="w-full p-2 mt-3 bg-pink">
         <div class="w-max mx-auto space-x-4">
-            <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" class="no-underline">
+            <a href="mailto:marcincakova.katarina@gmail.com" target="_blank" aria-label="mail to my email address" class="no-underline">
                 <i class="fa-solid fa-at self-center"></i>
             </a>
-            <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank" class="no-underline">
+            <a href="https://www.linkedin.com/in/katarinamarcincakova/" target="_blank"  aria-label="Navigates to LinkedIn profile" class="no-underline">
                 <i class="fa-brands fa-linkedin-in self-center"></i>
             </a>
-            <a href="https://github.com/KatkaMarcincakova" target="_blank" class="no-underline">
+            <a href="https://github.com/KatkaMarcincakova" target="_blank" aria-label="Navigates to GitHub profile" class="no-underline">
                 <i class="fa-brands fa-github self-center"></i>
             </a>
         </div>
