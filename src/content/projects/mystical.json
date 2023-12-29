@@ -8,9 +8,9 @@
         "Tailwind"
     ],
     "link": "https://katkamarcincakova.github.io/SleepyRPG_web/",
-    "img1": "./src/assets/mystical/1.png",
-    "img2": "./src/assets/mystical/2.png",
-    "img3": "./src/assets/mystical/3.png",
-    "img4": "./src/assets/mystical/4.png",
-    "img5": "./src/assets/mystical/5.png"
+    "img1": "../../assets/mystical/1.png",
+    "img2": "../../assets/mystical/2.png",
+    "img3": "../../assets/mystical/3.png",
+    "img4": "../../assets/mystical/4.png",
+    "img5": "../../assets/mystical/5.png"
 }

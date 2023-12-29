@@ -9,9 +9,9 @@
         "Bootstrap"
     ],
     "link": "",
-    "img1": "./src/assets/church/1.png",
-    "img2": "./src/assets/church/2.png",
-    "img3": "./src/assets/church/3.png",
-    "img4": "./src/assets/church/4.png",
-    "img5": "./src/assets/church/5.png"
+    "img1": "../../assets/church/1.png",
+    "img2": "../../assets/church/2.png",
+    "img3": "../../assets/church/3.png",
+    "img4": "../../assets/church/4.png",
+    "img5": "../../assets/church/5.png"
 }
