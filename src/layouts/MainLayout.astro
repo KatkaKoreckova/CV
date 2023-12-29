@@ -1,10 +1,18 @@
 ---
+import { Image } from 'astro:assets';
+
 import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
 
 import { ViewTransitions } from 'astro:transitions';
 
 const { title } = Astro.props
+
+import d2 from "./src/assets/2.png";
+import d3 from "./src/assets/3.png";
+import d4 from "./src/assets/4.png";
+import d5 from "./src/assets/5.png";
+import d7 from "./src/assets/7.png";
 ---
 
 <html lang="en">
@@ -27,24 +35,24 @@ const { title } = Astro.props
         <!-- Decor -->
         <div class="hidden lg:block">
             <div id="decorBehindTitlePhoto" class="absolute w-52 h-52 z-0">
-                <img src="./src/assets/4.png" alt="decor" class="w-full">
+                <Image src={d4} alt="decor" class="w-full">
             </div>
             
             <div id="decorServices" class="absolute w-40 h-40 z-0">
-                <img src="./src/assets/5.png" alt="decor" class="w-full">
+                <Image src={d5} alt="decor" class="w-full">
             </div>
             
             <div id="decorHeroServices" class="absolute w-64 h-64 z-0">
-                <img src="./src/assets/2.png" alt="decor" class="w-full">
+                <Image src={d2} alt="decor" class="w-full">
             </div>
             <div id="decorHeroServices2" class="absolute w-40 h-40 z-0">
-                <img src="./src/assets/7.png" alt="decor" class="w-full">
+                <Image src={d7} alt="decor" class="w-full">
             </div>
             <div id="decorAbout" class="absolute w-80 h-80 z-0">
-                <img src="./src/assets/7.png" alt="decor" class="w-full">
+                <Image src={d7} alt="decor" class="w-full">
             </div>
             <div id="decorEdu" class="absolute w-80 h-80 z-0">
-                <img src="./src/assets/3.png" alt="decor" class="w-full">
+                <Image src={d3} alt="decor" class="w-full">
             </div>
         </div>
 
