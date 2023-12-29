@@ -103,7 +103,7 @@ button {
 }
 
 .badge {
-    @apply rounded-lg p-[6px] border-yellow bg-lightYellow text-yellow text-xs font-medium border-4 border-yellow;
+    @apply rounded-lg p-[6px] border-yellow bg-lightYellow text-yellow text-xs font-medium border-4;
 }
 
 .card, .prod-card {
