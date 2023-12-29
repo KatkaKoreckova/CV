@@ -1,0 +1,61 @@
+---
+import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
+
+import { ViewTransitions } from 'astro:transitions';
+
+const { title } = Astro.props
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#2a28a4"/>
+		<meta name="description" content="Katarína Marcinčáková online portfolio with her projects and skills.">
+		<title>{title} | Katarína Marcinčáková</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/icon.png" id="tabFavicon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/471d17c5c6.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/carousel/carousel.js"></script>
+        <ViewTransitions />
+    </head>
+    <body>
+        <!-- Decor -->
+        <div class="hidden lg:block">
+            <div id="decorBehindTitlePhoto" class="absolute w-52 h-52 z-0">
+                <img src="./src/assets/4.png" alt="decor" class="w-full">
+            </div>
+            
+            <div id="decorServices" class="absolute w-40 h-40 z-0">
+                <img src="./src/assets/5.png" alt="decor" class="w-full">
+            </div>
+            
+            <div id="decorHeroServices" class="absolute w-64 h-64 z-0">
+                <img src="./src/assets/2.png" alt="decor" class="w-full">
+            </div>
+            <div id="decorHeroServices2" class="absolute w-40 h-40 z-0">
+                <img src="./src/assets/7.png" alt="decor" class="w-full">
+            </div>
+            <div id="decorAbout" class="absolute w-80 h-80 z-0">
+                <img src="./src/assets/7.png" alt="decor" class="w-full">
+            </div>
+            <div id="decorEdu" class="absolute w-80 h-80 z-0">
+                <img src="./src/assets/3.png" alt="decor" class="w-full">
+            </div>
+        </div>
+
+        <Navbar/>
+        <main class="content min-h-[65vh]">
+            <slot />
+        </main>
+        <Footer/>
+        <script src="../scripts/burger-menu.js"></script>
+		<script src="../scripts/decor.js"></script>
+		<script src="../scripts/script.js"></script>
+		<script src="../scripts/carousel.js"></script>
+    </body>
+</html>
