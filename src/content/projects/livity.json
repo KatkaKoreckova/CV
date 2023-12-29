@@ -8,5 +8,10 @@
         "JS",
         "Tailwind"
     ],
-    "link": "https://devpost.com/software/livity"
+    "link": "https://devpost.com/software/livity",
+    "img1": "./src/assets/livity/1.png",
+    "img2": "./src/assets/livity/2.png",
+    "img3": "./src/assets/livity/3.png",
+    "img4": "./src/assets/livity/4.png",
+    "img5": "./src/assets/livity/5.png"
 }
