@@ -1,0 +1,12 @@
+{
+    "title": "Livity",
+    "description": "UX/UI and front-end for a 15-minute city project from Hack Košice.",
+    "techStack": [
+        "Blazor",
+        "HTML",
+        "CSS",
+        "JS",
+        "Tailwind"
+    ],
+    "link": "https://devpost.com/software/livity"
+}

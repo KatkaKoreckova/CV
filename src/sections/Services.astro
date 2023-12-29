@@ -1,0 +1,47 @@
+﻿---
+import { Image } from 'astro:assets';
+
+import Title from "@components/Title.astro";
+import Subtitle from "@components/Subtitle.astro";
+
+import wireframesIcon from "../assets/reshot-icon-wireframes.svg";
+import uxuiIcon from "../assets/reshot-icon-vector-YJ8AFESVX2.svg";
+import feIcon from "../assets/reshot-icon-website-75HEZVRU2D.svg";
+import codingIcon from "../assets/reshot-icon-programming-CPHQWNF9JY.svg";
+---
+
+<span id="services" class="h-20"></span>
+<div class="z-40 relative max-w-[90%] mx-auto mt-10 overflow-x-hidden pb-10">
+    <Subtitle text="services"/>
+    <Title text="field of interest"/>
+    
+    <div class="grid grid-cols-1 xs:grid-cols-2 xs:gap-3 lg:grid-cols-4 lg:gap-5 mt-5 w-[80%] mx-auto">
+        <div class="card space-y-4 mt-4">
+            <div class="w-[40%] mx-auto">
+                <Image src={wireframesIcon} alt="wireframes icon" class="w-full">
+            </div>
+            <h3 class="text-center font-semibold">Wireframes</h3>
+        </div>
+        
+        <div class="card space-y-4 mt-4">
+            <div class="w-[40%] mx-auto">
+                <Image src={uxuiIcon} alt="wireframes icon" class="w-full">
+            </div>
+            <h3 class="text-center font-semibold">UX/UI design</h3>
+        </div>
+        
+        <div class="card space-y-4 mt-4">
+            <div class="w-[40%] mx-auto">
+                <Image src={feIcon} alt="wireframes icon" class="w-full">
+            </div>
+            <h3 class="text-center font-semibold">Front-end</h3>
+        </div>
+        
+        <div class="card space-y-4 mt-4" id="serviceCard">
+            <div class="w-[40%] mx-auto">
+                <Image src={codingIcon} alt="wireframes icon" class="w-full">
+            </div>
+            <h3 class="text-center font-semibold">Coding</h3>
+        </div>
+    </div>
+</div>
