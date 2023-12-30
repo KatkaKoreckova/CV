@@ -54,4 +54,5 @@
     createCarousel("muxly");
     createCarousel("msgorazd");
     createCarousel("zsgorazd");
+    createCarousel("lstme");
     });
