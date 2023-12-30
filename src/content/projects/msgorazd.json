@@ -1,0 +1,16 @@
+{
+    "title": "St. Gorazd - kindergarden",
+    "description": "UX/UI design and website for kindergarden of st. Gorazd, Kosice",
+    "techStack": [
+        "Figma",
+        "Astro",
+        "TailwindCSS",
+        "TinaCMS"
+    ],
+    "link": "https://skolagorazd.sk",
+    "img1": "../../assets/msgorazd/1.png",
+    "img2": "../../assets/msgorazd/2.png",
+    "img3": "../../assets/msgorazd/3.png",
+    "img4": "../../assets/msgorazd/4.png",
+    "img5": "../../assets/msgorazd/5.png"
+}

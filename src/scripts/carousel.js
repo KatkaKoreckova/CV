@@ -51,4 +51,6 @@
     createCarousel("church");
     createCarousel("livity");
     createCarousel("mystical");
+    createCarousel("muxly");
+    createCarousel("msgorazd");
     });
