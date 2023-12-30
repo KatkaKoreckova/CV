@@ -53,4 +53,5 @@
     createCarousel("mystical");
     createCarousel("muxly");
     createCarousel("msgorazd");
+    createCarousel("zsgorazd");
     });

@@ -1,0 +1,16 @@
+{
+    "title": "St. Gorazd - primary school",
+    "description": "UX/UI design and website for primary school of st. Gorazd, Kosice",
+    "techStack": [
+        "Figma",
+        "Astro",
+        "TailwindCSS",
+        "TinaCMS"
+    ],
+    "link": "https://skolagorazd.sk",
+    "img1": "../../assets/zsgorazd/1.png",
+    "img2": "../../assets/zsgorazd/2.png",
+    "img3": "../../assets/zsgorazd/3.png",
+    "img4": "../../assets/zsgorazd/4.png",
+    "img5": "../../assets/zsgorazd/5.png"
+}
