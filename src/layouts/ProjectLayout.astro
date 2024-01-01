@@ -1,18 +1,10 @@
 ---
-import { Image } from 'astro:assets';
-
 import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
 
 import { ViewTransitions } from 'astro:transitions';
 
 const { title } = Astro.props
-
-import d2 from "../assets/2.png";
-import d3 from "../assets/3.png";
-import d4 from "../assets/4.png";
-import d5 from "../assets/5.png";
-import d7 from "../assets/7.png";
 
 import favicon from "../assets/icon.png";
 ---
@@ -30,45 +22,19 @@ import favicon from "../assets/icon.png";
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
-        
+
 		<script src="https://kit.fontawesome.com/471d17c5c6.js" crossorigin="anonymous"></script>
         
         <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/carousel/carousel.js"></script>
         <ViewTransitions />
     </head>
     <body>
-        <!-- Decor -->
-        <div class="hidden lg:block">
-            <div id="decorBehindTitlePhoto" class="absolute w-52 h-52 z-0">
-                <Image src={d4} alt="decor" class="w-full">
-            </div>
-            
-            <div id="decorServices" class="absolute w-40 h-40 z-0">
-                <Image src={d5} alt="decor" class="w-full">
-            </div>
-            
-            <div id="decorHeroServices" class="absolute w-64 h-64 z-0">
-                <Image src={d2} alt="decor" class="w-full">
-            </div>
-          <!--  <div id="decorHeroServices2" class="absolute w-40 h-40 z-0">
-                <Image src={d7} alt="decor" class="w-full">
-            </div> -->
-            <div id="decorAbout" class="absolute w-80 h-80 z-0">
-                <Image src={d7} alt="decor" class="w-full">
-            </div>
-            <div id="decorEdu" class="absolute w-80 h-80 z-0">
-                <Image src={d3} alt="decor" class="w-full">
-            </div>
-        </div>
-
         <Navbar/>
-        <main class="content min-h-[65vh]">
+        <main class="content min-h-[65vh] mt-16">
             <slot />
         </main>
         <Footer/>
         <script src="../scripts/burger-menu.js"></script>
-		<script src="../scripts/decor.js"></script>
 		<script src="../scripts/script.js"></script>
-		<script src="../scripts/carousel.js"></script>
     </body>
 </html>

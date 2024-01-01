@@ -1,0 +1,76 @@
+﻿---
+import "../styles/base.css";
+import { Image } from 'astro:assets';
+
+import { getCollection, getEntries, getEntry } from 'astro:content';
+export async function getStaticPaths() {
+  const postsResponse = await getCollection('projects');
+  const posts = postsResponse.map((post) => post.id);
+  const paths = posts.map((slug) => ({
+    params: { project: slug },
+  }));
+
+  return paths;
+}
+
+const { project } = Astro.params;
+
+const dataIn = await getEntry('projects', project);
+
+const data = dataIn.data;
+
+import ProjectLayout from '@layouts/ProjectLayout.astro';
+import ProjectShort from "@components/ProjectShort.astro";
+
+import placeholder from "../assets/placeholder.png";
+---
+
+<ProjectLayout title={data.title}>
+    <a href="/CV/">Back</a>
+    <h1 class="text-yellow mt-10 font-bold">{data.title}</h1>
+    <div class="grid grid-cols-1 m:grid-cols-6 gap-4 mt-12">
+        <div class="col-span-2 flex flex-col space-y-4">
+            <ProjectShort title="company type" desc="something" />
+            <ProjectShort title="task" desc="something" />
+            <ProjectShort title="solution" desc="something" />
+            <ProjectShort title="result" desc="something" />
+            <ProjectShort title="tech stack" desc="something" />
+        </div>
+        <div class="col-span-4">
+            <h4 class="text-lightPurple mt-8 m:mt-0">Some cool title text</h4>
+
+            <h2 class="text-yellow mt-10 uppercase font-bold">Project goals</h2>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+            <Image src={placeholder} alt="asd" class="w-full my-4"/>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+
+            <h2 class="text-yellow mt-10 uppercase font-bold">Cesta k rieseniu</h2>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+            <Image src={placeholder} alt="asd" class="w-full my-4"/>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+            
+            <h2 class="text-yellow mt-10 uppercase font-bold">Vysledok</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+            <Image src={placeholder} alt="asd" class="w-full my-4"/>
+
+            
+            <h2 class="text-yellow mt-10 uppercase font-bold">Zaver</h2>
+            <p class="mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare nisi ut condimentum fermentum. Fusce pulvinar nulla non nisi convallis, sit amet bibendum tortor pellentesque. Duis pretium turpis et euismod sagittis. Donec sed velit mattis, blandit felis sed, dignissim metus. Sed ac diam eget justo ultricies aliquam id sit amet magna. Duis ullamcorper ex vitae mattis aliquet. Vivamus non sem sed ligula vestibulum vulputate. Phasellus gravida tristique nulla non convallis. Donec pretium sed leo sed volutpat. Donec tincidunt blandit risus, id condimentum sapien fringilla sed. Duis vel tortor quis nisi auctor fringilla vitae vel nisi. 
+            </p>
+        </div>
+    </div>
+</ProjectLayout>

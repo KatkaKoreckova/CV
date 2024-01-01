@@ -1,0 +1,12 @@
+﻿---
+
+const {title, desc} = Astro.props;
+
+---
+
+<div class="flex flex-col space-y-2">
+    <h2 class="text-lightPurple font-semibold uppercase">{title ?? "title"}</h2>
+    <div>
+        {desc ?? "desc"}
+    </div>
+</div>
