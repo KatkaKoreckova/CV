@@ -16,32 +16,40 @@ import codingIcon from "../assets/reshot-icon-programming-CPHQWNF9JY.svg";
     <Title text="field of interest"/>
     
     <div class="grid grid-cols-1 xs:grid-cols-2 xs:gap-3 lg:grid-cols-4 lg:gap-5 mt-5 w-[80%] mx-auto">
-        <div class="card space-y-4 mt-4">
+        <div class="card space-y-4 mt-4 flex flex-col justify-between">
             <div class="w-[40%] mx-auto">
                 <Image src={wireframesIcon} alt="wireframes icon" class="w-full">
             </div>
-            <h3 class="text-center font-semibold">Wireframes, UX</h3>
+            <div class="h-full flex items-stretch">
+                <h3 class="text-center font-semibold self-center w-full">Wireframes, UX</h3>
+            </div>
         </div>
         
-        <div class="card space-y-4 mt-4">
+        <div class="card space-y-4 mt-4 flex flex-col justify-between">
             <div class="w-[40%] mx-auto">
                 <Image src={uxuiIcon} alt="graphic icon" class="w-full">
             </div>
-            <h3 class="text-center font-semibold">UX/UI design, graphic design</h3>
+            <div class="h-full flex items-stretch">
+                <h3 class="text-center font-semibold self-center w-full">UX/UI design, graphic design</h3>
+            </div>
         </div>
         
-        <div class="card space-y-4 mt-4">
+        <div class="card space-y-4 mt-4 flex flex-col justify-between">
             <div class="w-[40%] mx-auto">
                 <Image src={feIcon} alt="front-end icon" class="w-full">
             </div>
-            <h3 class="text-center font-semibold">Front-end</h3>
+            <div class="h-full flex items-stretch">
+                <h3 class="text-center font-semibold self-center w-full">Front-end</h3>
+            </div>
         </div>
         
-        <div class="card space-y-4 mt-4" id="serviceCard">
+        <div class="card space-y-4 mt-4 flex flex-col justify-between" id="serviceCard">
             <div class="w-[40%] mx-auto">
                 <Image src={codingIcon} alt="coding icon" class="w-full">
             </div>
-            <h3 class="text-center font-semibold">Coding</h3>
+            <div class="h-full flex items-stretch">
+                <h3 class="text-center font-semibold self-center w-full">Coding</h3>
+            </div>
         </div>
     </div>
 </div>
