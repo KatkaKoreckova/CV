@@ -18,19 +18,19 @@ const el2 = document.getElementById('services');
 decor2.style.top = ((el2.getBoundingClientRect().top + document.documentElement.scrollTop - decor2.clientHeight + 50)) + 'px';
 decor2.style.left = (-50) + 'px';
 
-
+/*
 const decor4 = document.getElementById('decorHeroServices2');
 const el4 = document.getElementById('services');
 
 decor4.style.top = ((el4.getBoundingClientRect().top + document.documentElement.scrollTop - 50)) + 'px';
 decor4.style.right = (-50) + 'px';
-
+*/
 
 const decor5 = document.getElementById('decorAbout');
 const el5 = document.getElementById('about');
 
 decor5.style.top = ((el5.getBoundingClientRect().top + document.documentElement.scrollTop)) + 'px';
-decor5.style.left = (150) + 'px';
+decor5.style.left = (2) + '%';
 
 
 const decor6 = document.getElementById('decorEdu');
