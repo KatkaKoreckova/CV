@@ -1,0 +1,16 @@
+{
+    "title": "Nonogram",
+    "description": "My first ASP.NET project",
+    "techStack": [
+        "HTML",
+        "CSS",
+        "ASP.NET",
+        "C#"
+    ],
+    "link": "",
+    "img1": "../../assets/nonogram/1.png",
+    "img2": "../../assets/2.png",
+    "img3": "../../assets/2.png",
+    "img4": "../../assets/2.png",
+    "img5": "../../assets/2.png"
+}

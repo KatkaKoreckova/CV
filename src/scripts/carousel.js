@@ -55,4 +55,5 @@
     createCarousel("msgorazd");
     createCarousel("zsgorazd");
     createCarousel("lstme");
+    createCarousel("chyzka");
     });
