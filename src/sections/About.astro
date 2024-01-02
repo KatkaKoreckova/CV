@@ -6,6 +6,8 @@ import Subtitle from "@components/Subtitle.astro";
 
 import profile from "../assets/ja-hk.jpg";
 
+import SkillBar from '@components/SkillBar.astro';
+import Edu from '@components/Edu.astro';
 ---
 
 <span id="about" class="h-20"></span>
@@ -43,125 +45,39 @@ import profile from "../assets/ja-hk.jpg";
         <div class="card mt-4" id="skillsCard">
             <h3 class="text-xl xxs:text-3xl font-bold tracking-wider text-purple">Skills</h3>
             
-            <h4 class="text-lg m-0 mt-7">Front-end, Back-end</h4>
-            <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
-                <div>
-                    <h5 class="font-light">C#</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-2/3 h-2 bg-pink pl-2 text-purple text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">Java</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-2/3 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">HTML</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[80%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">CSS</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[80%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">Tailwind CSS</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[71%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">JS</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-1/3 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">SQL</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-1/3 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">.NET</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-2/3 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">C</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-1/3 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">Python</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-1/2 h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
+            <h4 class="text-lg m-0 mt-6">Front-end, Back-end</h4>
+            <div class="grid grid-cols-1 xs:grid-cols-2 gap-4 mt-2">
+                <SkillBar title="C#" value="66" />
+                <SkillBar title="Java" value="66" />
+                <SkillBar title="HTML" value="80" />
+                <SkillBar title="CSS" value="90" />
+                <SkillBar title="TailwindCSS" value="71" />
+                <SkillBar title="Astro" value="50" />
+                <SkillBar title="JS" value="33" />
+                <SkillBar title="SQL" value="33" />
+                <SkillBar title=".NET" value="66" />
+                <SkillBar title="C" value="33" />
+                <SkillBar title="Python" value="33" />
             </div>
             
-            <h4 class="text-lg m-0 mt-7">Robotics</h4>
-            <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
-                <div>
-                    <h5 class="font-light">Arduino / ESP32</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[90%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">NXT/EV3</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-full h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">3D modeling</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[40%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">PCB</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[20%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
+            <h4 class="text-lg m-0 mt-6">Robotics</h4>
+            <div class="grid grid-cols-1 xs:grid-cols-2 gap-4 mt-2">
+                <SkillBar title="Arduino / ESP32" value="80" />
+                <SkillBar title="NXT/EV3" value="100" />
+                <SkillBar title="3D modeling" value="40" />
+                <SkillBar title="PCB" value="20" />
             </div>
             
-            <h4 class="text-lg m-0 mt-7">Other</h4>
-            <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
-                <div>
-                    <h5 class="font-light">Figma</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[70%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">Git</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[80%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-light">Linux</h5>
-                    <div class="w-full bg-gray-200 h-2 rounded-md">
-                        <div class="w-[20%] h-2 bg-pink pl-2 text-xs rounded-md"></div>
-                    </div>
-                </div>
+            <h4 class="text-lg m-0 mt-6">Other</h4>
+            <div class="grid grid-cols-1 xs:grid-cols-2 gap-4 mt-2">
+                <SkillBar title="Figma" value="80" />
+                <SkillBar title="Canva" value="80" />
+                <SkillBar title="Git" value="70" />
+                <SkillBar title="Linux" value="20" />
             </div>
             
-            <h4 class="text-lg m-0 mt-7">Beggining with</h4>
-            <div class="grid grid-cols-1 xs:grid-cols-2 gap-2">
-                <div>
-                    <h5 class="font-light">Astro</h5>
-                </div>
+            <h4 class="text-lg m-0 mt-6">Beggining with</h4>
+            <div class="grid grid-cols-1 xs:grid-cols-2 gap-4 mt-2">
                 <div>
                     <h5 class="font-light">Docker</h5>
                 </div>
@@ -174,55 +90,11 @@ import profile from "../assets/ja-hk.jpg";
         <div class="card mt-4" id="eduCard">
             <h3 class="text-xl xxs:text-3xl font-bold tracking-wider text-purple">Education</h3>
             
-            <div class="mt-7 flex flex-row space-x-3">
-                <div class="text-pink text-lg">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div>
-                    <span class="font-medium text-sm xxs:text-lg">Informatics, Ing.</span> <br/>
-                    <span class="text-xs xxs:text-sm text-gray-500">2023 - present, Technical University of Kosice</span>
-                </div>
-            </div>
-
-            <div class="mt-7 flex flex-row space-x-3">
-                <div class="text-pink text-lg">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div>
-                    <span class="font-medium text-sm xxs:text-lg">Informatics, BC</span> <br/>
-                    <span class="text-xs xxs:text-sm text-gray-500">2020 - 2023, Technical University of Kosice</span>
-                </div>
-            </div>
-            
-            <div class="mt-7 flex flex-row space-x-3">
-                <div class="text-pink text-lg">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div>
-                    <span class="font-medium text-sm xxs:text-lg">Technical Support Fundamentals</span> <br/>
-                    <span class="text-xs xxs:text-sm text-gray-500">2020, Google online course</span>
-                </div>
-            </div>
-            
-            <div class="mt-7 flex flex-row space-x-3">
-                <div class="text-pink text-lg">
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div>
-                    <span class="font-medium text-sm xxs:text-lg">LSTME</span> <br/>
-                    <span class="text-xs xxs:text-sm text-gray-500">2016 - 2019, IT camp&nbsp;<a href="https://lstme.sk/" target="_blank" class="no-underline text-lightPurple"  aria-label="Navigate to LSTME website"><i class="fa-solid fa-link"></i></a></span>
-                </div>
-            </div>
-            
-            <div class="mt-7 flex flex-row space-x-3">
-                <div class="text-pink text-sm xxs:text-lg">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div>
-                <div>
-                    <span class="font-medium text-lg">High school</span> <br/>
-                    <span class="text-xs xxs:text-sm text-gray-500">2012 - 2020, Gymnázium Alejová 1, Košice</span>
-                </div>
-            </div>
+            <Edu title="Informatics, Ing." desc="2023 - present, Technical University of Kosice", icon="fa-graduation-cap" />
+            <Edu title="Informatics, bc." desc="2020 - 2023, Technical University of Kosice", icon="fa-graduation-cap" />
+            <Edu title="Technical Support Fundamentals" desc="2020, Google online course", icon="fa-laptop-code" />
+            <Edu title="LSTME" desc="2016 - 2019, IT camp", icon="fa-laptop-code" />
+            <Edu title="High school" desc="2012 - 2020, Gymnázium Alejová 1, Košice", icon="fa-graduation-cap" />
         </div>
     </div>
 </div>
