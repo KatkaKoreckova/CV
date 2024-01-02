@@ -16,7 +16,7 @@ const data = projectsPost.data;
         <div class="px-4 pt-3 pb-5">
             <h3 class="text-xl xxs:text-2xl font-bold tracking-wider">{data.title}&nbsp;
                 {data.link && (
-                  <a href="https://devpost.com/software/livity" target="_blank" class="no-underline text-sm text-lightPurple" aria-label="Navigates to project page"><i class="fa-solid fa-link"></i></a>
+                  <a href={data.link} target="_blank" class="no-underline text-sm text-lightPurple" aria-label="Navigates to project page"><i class="fa-solid fa-link"></i></a>
                 )}
               </h3>
               <h5 class="text-gray-500">
