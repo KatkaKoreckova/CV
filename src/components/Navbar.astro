@@ -3,22 +3,22 @@
         <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
             <!-- Logo -->
             <div class="self-center">
-                <a href=`${import.meta.env.BASE_URL}#hero` class="outline-none p-0 w-24 font-bold text-2xl" aria-label="navigate to home a">
+                <a href="#hero" class="outline-none p-0 w-24 font-bold text-2xl" aria-label="navigate to home a">
                     <span class="text-purple">K</span>M
                 </a>
             </div>
             <!-- Menu Items -->
             <div class="hidden space-x-6 self-center text-sm font-normal md:flex">
-                <a href=`${import.meta.env.BASE_URL}#services` class="animated-underline self-center" aria-label="navigate to services button">
+                <a href="#services" class="animated-underline self-center" aria-label="navigate to services button">
                     SERVICES
                 </a>
-                <a href=`${import.meta.env.BASE_URL}#about` class="animated-underline self-center" aria-label="navigate to about me button">
+                <a href="#about" class="animated-underline self-center" aria-label="navigate to about me button">
                     ABOUT
                 </a>
-                <a href=`${import.meta.env.BASE_URL}#projects` class="animated-underline self-center" aria-label="navigate to projects button">
+                <a href="#projects" class="animated-underline self-center" aria-label="navigate to projects button">
                     PROJECTS
                 </a>
-                <a href=`${import.meta.env.BASE_URL}#contact` class="animated-underline self-center" aria-label="navigate to contact button">
+                <a href="#contact" class="animated-underline self-center" aria-label="navigate to contact button">
                     CONTACT
                 </a>
             </div>
@@ -36,13 +36,13 @@
 <div id="menu" class="full-screen hidden z-50 fixed backdrop-blur-sm mt-10">
     <div class="font-semibold tracking-widest bg-white">
         <div class="flex flex-col max-w-[90%] mx-auto">
-            <button onclick="scrollToSection('#services')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to services button">SERVICES</button>
+            <a href="#services" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to services a">SERVICES</a>
             <hr class="w-full border-0 border-b border-gray-500">
-            <button onclick="scrollToSection('#about')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to about me button">ABOUT</button>
+            <a href="#about" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to about me a">ABOUT</a>
             <hr class="w-full border-0 border-b border-gray-500">
-            <button onclick="scrollToSection('#projects')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to projects button">PROJECTS</button>
+            <a href="#projects" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to projects a">PROJECTS</a>
             <hr class="w-full border-0 border-b border-gray-500">
-            <button onclick="scrollToSection('#contact')" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to contact button">CONTACT</button>
+            <a href="#contact" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to contact a">CONTACT</a>
         </div>
     </div>
 </div>
