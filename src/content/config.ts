@@ -7,6 +7,7 @@ const projectsCollection = defineCollection({
     description: z.string(),
     techStack: z.array(z.string()),
     link: z.string().optional(),
+    figma: z.string().optional(),
     img1: image().refine((img) => img.width >= 1080, {
       message: "Cover image must be at least 1080 pixels wide!",
     }),
