@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme { 
+    --color-dark: oklch(0.1913 0 0);
+    --color-bg: oklch(0.9851 0 0);
+    --color-gray: oklch(0.8297 0 0);
+    --color-purple: oklch(0.8041 0.1039 289.42);
+    --color-pink: oklch(0.8478 0.1067 321.73);
+    --color-orange: oklch(0.8395 0.1056 57.32);
+    --color-lime: oklch(0.9516 0.1411 116.07);
+    --color-beige: oklch(0.98 0.0493 104.79);
+}
+
+body,
+html {
+    font-family: 'Varta', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.full-screen {
+    @apply w-full h-screen;
+}
+
+button, a {
+    transition: all 0.2s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 { font-size: 2.75rem !important; }
+h2 { font-size: 1.741rem !important; }
+h3 { font-size: 1.516rem !important; }
+h4 { font-size: 1.320rem !important; }
+h5 { font-size: 1.149rem !important; }
+h6 { font-size: 1.0rem !important; }
+
+.content {
+    @apply w-[90%] max-w-[90%] lg:w-[85%] lg:max-w-[100rem] mx-auto;
+}
+
+/*Nav animations
+--------------------------------------------------*/
+
+.animated-underline {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.animated-underline::after {
+    display: block;
+    content: '';
+    @apply border-b-2 border-purple;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated-underline:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Hamburger Menu */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 3px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

@@ -1,16 +1,13 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro"
 
+import TitleImagePc from "@assetsLocal/title-image-pc.svg";
+import TitleImageMb from "@assetsLocal/title-image-mb.svg";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Domov">
+	<div class="w-full py-10">
+		<img src={TitleImagePc.src} alt="" class="hidden md:block">
+		<img src={TitleImageMb.src} alt="" class="md:hidden">
+	</div>
+</MainLayout>
