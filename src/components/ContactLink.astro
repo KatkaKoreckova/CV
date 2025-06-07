@@ -1,0 +1,10 @@
+---
+const {href, title, icon, alt} = Astro.props;
+---
+
+<a href={href} target="_blank">
+    <div class="flex flex-row space-x-2 items-stretch">
+        <img src={icon} alt={alt} class="h-6">
+        <h5 class="self-center">{title}</h5>
+    </div>
+</a>
