@@ -1,6 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro"
 
+import Title from "@components/Title.astro";
+
 import TitleImagePc from "@assetsLocal/title-image-pc.svg";
 import TitleImageMb from "@assetsLocal/title-image-mb.svg";
 ---
@@ -10,4 +12,7 @@ import TitleImageMb from "@assetsLocal/title-image-mb.svg";
 		<img src={TitleImagePc.src} alt="title illustration with my name" class="hidden md:block">
 		<img src={TitleImageMb.src} alt="title illustration with my name" class="md:hidden">
 	</div>
+
+	<Title title="Projekty" subtitle="najnovšie" />
+
 </MainLayout>
