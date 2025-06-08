@@ -2,9 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro"
 
 import Title from "@components/Title.astro";
+import Card from "@components/Card.astro";
 
 import TitleImagePc from "@assetsLocal/title-image-pc.svg";
 import TitleImageMb from "@assetsLocal/title-image-mb.svg";
+import placeholder from "@assetsLocal/placeholder.png";
 ---
 
 <MainLayout title="Domov">
@@ -14,5 +16,10 @@ import TitleImageMb from "@assetsLocal/title-image-mb.svg";
 	</div>
 
 	<Title title="Projekty" subtitle="najnovšie" />
+	<div class="grid grid-cols-4 gap-4 mt-4">
+		<Card title="RBA" photo={placeholder.src} type="uxui"/>
+		<Card type="fe"/>
+		<Card type="graphic"/>
+	</div>
 
 </MainLayout>

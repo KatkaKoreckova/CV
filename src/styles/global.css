@@ -114,3 +114,15 @@ h6 { font-size: 1.0rem !important; }
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+.limeBg {
+    @apply bg-lime;
+}
+
+.orangeBg {
+    @apply bg-orange;
+}
+
+.purpleBg {
+    @apply bg-purple;
+}
