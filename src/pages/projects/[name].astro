@@ -37,11 +37,9 @@ import placeholder from "@assetsLocal/placeholder.png";
     <p>
         {project.description}
     </p>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 mx-auto mt-10">
 
-        <!-- Large tile -->
-        <div class="md:col-span-3 md:row-span-2 rounded-3xl relative">
+    {project.imageDesc.length === 1 ? (
+        <div class="w-full rounded-3xl relative mt-10">
             <Image
                 src={`/CV/projects/${name}/1.png`}
                 alt={project.imageDesc[0]}
@@ -53,112 +51,127 @@ import placeholder from "@assetsLocal/placeholder.png";
             <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
                 <h6>{project.imageDesc[0]}</h6>
             </div>
-        </div>  
-
-        <!-- Small tile -->
-        <div class="md:col-span-1 bg-orange rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/2.png`}
-                alt={project.imageDesc[1]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[1]}</h6>
-            </div>
         </div>
+    ) : (
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 mx-auto mt-10">
 
-        <!-- Image tile -->
-        <div class="md:col-span-2 rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/3.png`}
-                alt={project.imageDesc[2]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[2]}</h6>
-            </div>
-        </div>
-
-        <!-- Mixed content tile -->
-        <div class="md:col-span-2 rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/4.png`}
-                alt={project.imageDesc[3]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[3]}</h6>
-            </div>
-        </div>
-
-        {project.imageDesc.length === 5 ? (
-            <div class="md:col-span-1 md:row-span-1 rounded-3xl relative">
+            <div class="md:col-span-3 md:row-span-2 rounded-3xl relative">
                 <Image
-                    src={`/CV/projects/${name}/5.png`}
-                    alt={project.imageDesc[4]}
+                    src={`/CV/projects/${name}/1.png`}
+                    alt={project.imageDesc[0]}
                     width={500}
                     height={500}
                     class="w-full h-full object-cover rounded-3xl"
                     loading='lazy'
                 />
                 <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                    <h6>{project.imageDesc[4]}</h6>
+                    <h6>{project.imageDesc[0]}</h6>
                 </div>
-            </div>
-        ) : (
-            <div class="md:col-span-1 md:row-span-2 rounded-3xl relative">
+            </div>  
+
+            <div class="md:col-span-1 bg-orange rounded-3xl relative">
                 <Image
-                    src={`/CV/projects/${name}/5.png`}
-                    alt={project.imageDesc[4]}
+                    src={`/CV/projects/${name}/2.png`}
+                    alt={project.imageDesc[1]}
                     width={500}
                     height={500}
                     class="w-full h-full object-cover rounded-3xl"
                     loading='lazy'
                 />
                 <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                    <h6>{project.imageDesc[4]}</h6>
+                    <h6>{project.imageDesc[1]}</h6>
                 </div>
             </div>
 
             <div class="md:col-span-2 rounded-3xl relative">
                 <Image
-                    src={`/CV/projects/${name}/6.png`}
-                    alt={project.imageDesc[5]}
+                    src={`/CV/projects/${name}/3.png`}
+                    alt={project.imageDesc[2]}
                     width={500}
                     height={500}
                     class="w-full h-full object-cover rounded-3xl"
                     loading='lazy'
                 />
                 <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                    <h6>{project.imageDesc[5]}</h6>
+                    <h6>{project.imageDesc[2]}</h6>
                 </div>
             </div>
 
-            <div class="md:col-span-3  rounded-3xl relative">
+            <div class="md:col-span-2 rounded-3xl relative">
                 <Image
-                    src={`/CV/projects/${name}/7.png`}
-                    alt={project.imageDesc[6]}
+                    src={`/CV/projects/${name}/4.png`}
+                    alt={project.imageDesc[3]}
                     width={500}
                     height={500}
                     class="w-full h-full object-cover rounded-3xl"
                     loading='lazy'
                 />
                 <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                    <h6>{project.imageDesc[6]}</h6>
+                    <h6>{project.imageDesc[3]}</h6>
                 </div>
             </div>
-        )}
 
-        
+            {project.imageDesc.length === 5 ? (
+                <div class="md:col-span-1 md:row-span-1 rounded-3xl relative">
+                    <Image
+                        src={`/CV/projects/${name}/5.png`}
+                        alt={project.imageDesc[4]}
+                        width={500}
+                        height={500}
+                        class="w-full h-full object-cover rounded-3xl"
+                        loading='lazy'
+                    />
+                    <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                        <h6>{project.imageDesc[4]}</h6>
+                    </div>
+                </div>
+            ) : (
+                <div class="md:col-span-1 md:row-span-2 rounded-3xl relative">
+                    <Image
+                        src={`/CV/projects/${name}/5.png`}
+                        alt={project.imageDesc[4]}
+                        width={500}
+                        height={500}
+                        class="w-full h-full object-cover rounded-3xl"
+                        loading='lazy'
+                    />
+                    <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                        <h6>{project.imageDesc[4]}</h6>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 rounded-3xl relative">
+                    <Image
+                        src={`/CV/projects/${name}/6.png`}
+                        alt={project.imageDesc[5]}
+                        width={500}
+                        height={500}
+                        class="w-full h-full object-cover rounded-3xl"
+                        loading='lazy'
+                    />
+                    <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                        <h6>{project.imageDesc[5]}</h6>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3  rounded-3xl relative">
+                    <Image
+                        src={`/CV/projects/${name}/7.png`}
+                        alt={project.imageDesc[6]}
+                        width={500}
+                        height={500}
+                        class="w-full h-full object-cover rounded-3xl"
+                        loading='lazy'
+                    />
+                    <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                        <h6>{project.imageDesc[6]}</h6>
+                    </div>
+                </div>
+            )}
+
+            
     </div>
+    )}
 
 </MainLayout>
