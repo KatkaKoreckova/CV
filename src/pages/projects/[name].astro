@@ -1,0 +1,149 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+
+type Project = CollectionEntry<'projects'>;
+
+export async function getStaticPaths() {
+  const postsResponse = await getCollection('projects');
+  
+  var paths = postsResponse.map((post) => ({
+    params: { name: post.slug },
+  }));
+
+  return paths
+}
+
+const { name } = Astro.params;  
+const project = (await getEntry('projects', name)).data;
+
+import MainLayout from "@layouts/MainLayout.astro";
+
+import Title from "@components/Title.astro";
+import Tag from "@components/Tag.astro";
+
+import placeholder from "@assetsLocal/placeholder.png";
+---
+
+<MainLayout>
+    <div class="flex flex-row justify-between items-stretch">
+        <Title title={project.title}/>
+        <a href={project.link} target="_blank" class="px-4 py-2 rounded-xl bg-pink title border-2 border-dark flex items-center hover:bg-dark hover:text-pink h-max self-center">
+            {project.linkText}
+        </a>
+    </div>
+
+    <p>
+        {project.description}
+    </p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 auto-rows-[200px] gap-4 mx-auto mt-10">
+
+        <!-- Large tile -->
+        <div class="md:col-span-3 md:row-span-2 rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/1.png`}
+                alt={project.imageDesc[0]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[0]}</h6>
+            </div>
+        </div>  
+
+        <!-- Small tile -->
+        <div class="md:col-span-1 bg-orange rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/2.png`}
+                alt={project.imageDesc[1]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[1]}</h6>
+            </div>
+        </div>
+
+        <!-- Image tile -->
+        <div class="md:col-span-2 rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/3.png`}
+                alt={project.imageDesc[2]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[2]}</h6>
+            </div>
+        </div>
+
+        <!-- Mixed content tile -->
+        <div class="md:col-span-2 rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/4.png`}
+                alt={project.imageDesc[3]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[3]}</h6>
+            </div>
+        </div>
+
+        <!-- Portrait tile -->
+        <div class="md:col-span-1 md:row-span-2 rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/5.png`}
+                alt={project.imageDesc[4]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[4]}</h6>
+            </div>
+        </div>
+
+        <!-- Another text tile -->
+        <div class="md:col-span-2 rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/6.png`}
+                alt={project.imageDesc[5]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[5]}</h6>
+            </div>
+        </div>
+
+        <!-- Another text tile -->
+        <div class="md:col-span-3  rounded-3xl relative">
+            <Image
+                src={`/CV/projects/${name}/7.png`}
+                alt={project.imageDesc[6]}
+                width={500}
+                height={500}
+                class="w-full h-full object-cover rounded-3xl"
+                loading='lazy'
+            />
+            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                <h6>{project.imageDesc[6]}</h6>
+            </div>
+        </div>
+    </div>
+
+</MainLayout>

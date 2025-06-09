@@ -1,0 +1,16 @@
+---
+const {text, type} = Astro.props;
+
+var color;
+if (type == "uxui") {
+    color = "lime";
+} else if (type == "fe") {
+    color = "purple";
+} else {
+    color = "orange";
+}
+---
+
+<span class={`px-2 py-1 bg-${color} border-2 text-sm rounded-lg border-dark`}>
+    {text}
+</span>
