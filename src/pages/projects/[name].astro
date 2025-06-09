@@ -100,50 +100,65 @@ import placeholder from "@assetsLocal/placeholder.png";
             </div>
         </div>
 
-        <!-- Portrait tile -->
-        <div class="md:col-span-1 md:row-span-2 rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/5.png`}
-                alt={project.imageDesc[4]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[4]}</h6>
+        {project.imageDesc.length === 5 ? (
+            <div class="md:col-span-1 md:row-span-1 rounded-3xl relative">
+                <Image
+                    src={`/CV/projects/${name}/5.png`}
+                    alt={project.imageDesc[4]}
+                    width={500}
+                    height={500}
+                    class="w-full h-full object-cover rounded-3xl"
+                    loading='lazy'
+                />
+                <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                    <h6>{project.imageDesc[4]}</h6>
+                </div>
             </div>
-        </div>
+        ) : (
+            <div class="md:col-span-1 md:row-span-2 rounded-3xl relative">
+                <Image
+                    src={`/CV/projects/${name}/5.png`}
+                    alt={project.imageDesc[4]}
+                    width={500}
+                    height={500}
+                    class="w-full h-full object-cover rounded-3xl"
+                    loading='lazy'
+                />
+                <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                    <h6>{project.imageDesc[4]}</h6>
+                </div>
+            </div>
 
-        <!-- Another text tile -->
-        <div class="md:col-span-2 rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/6.png`}
-                alt={project.imageDesc[5]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[5]}</h6>
+            <div class="md:col-span-2 rounded-3xl relative">
+                <Image
+                    src={`/CV/projects/${name}/6.png`}
+                    alt={project.imageDesc[5]}
+                    width={500}
+                    height={500}
+                    class="w-full h-full object-cover rounded-3xl"
+                    loading='lazy'
+                />
+                <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                    <h6>{project.imageDesc[5]}</h6>
+                </div>
             </div>
-        </div>
 
-        <!-- Another text tile -->
-        <div class="md:col-span-3  rounded-3xl relative">
-            <Image
-                src={`/CV/projects/${name}/7.png`}
-                alt={project.imageDesc[6]}
-                width={500}
-                height={500}
-                class="w-full h-full object-cover rounded-3xl"
-                loading='lazy'
-            />
-            <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
-                <h6>{project.imageDesc[6]}</h6>
+            <div class="md:col-span-3  rounded-3xl relative">
+                <Image
+                    src={`/CV/projects/${name}/7.png`}
+                    alt={project.imageDesc[6]}
+                    width={500}
+                    height={500}
+                    class="w-full h-full object-cover rounded-3xl"
+                    loading='lazy'
+                />
+                <div class="w-full bg-white/80 absolute bottom-0 rounded-b-3xl px-4 py-2">
+                    <h6>{project.imageDesc[6]}</h6>
+                </div>
             </div>
-        </div>
+        )}
+
+        
     </div>
 
 </MainLayout>

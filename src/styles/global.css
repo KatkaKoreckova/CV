@@ -126,3 +126,15 @@ h6 { font-size: 1.0rem !important; }
 .purpleBg {
     @apply bg-purple;
 }
+
+.limetext {
+    @apply text-lime;
+}
+
+.orangetext {
+    @apply text-orange;
+}
+
+.purpletext {
+    @apply text-purple;
+}
