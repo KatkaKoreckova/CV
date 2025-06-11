@@ -8,7 +8,7 @@ type Project = CollectionEntry<'projects'>;
 export async function getStaticPaths() {
   const postsResponse = await getCollection('projects');
   
-  var paths = postsResponse.map((post) => ({
+  var paths = postsResponse.map((post: { slug: any; }) => ({
     params: { name: post.slug },
   }));
 
@@ -29,9 +29,13 @@ import placeholder from "@assetsLocal/placeholder.png";
 <MainLayout title={project.title}>
     <div class="flex flex-row justify-between items-stretch">
         <Title title={project.title}/>
-        <a href={project.link} target="_blank" class="px-4 py-2 rounded-xl bg-pink title border-2 border-dark flex items-center hover:bg-dark hover:text-pink h-max self-center">
-            {project.linkText}
-        </a>
+        {project.link === "" ? (
+            <span></span>
+        ) : (
+            <a href={project.link} target="_blank" class="px-4 py-2 rounded-xl bg-pink title border-2 border-dark flex items-center hover:bg-dark hover:text-pink h-max self-center">
+                {project.linkText}
+            </a>
+        )}
     </div>
 
     <p>
