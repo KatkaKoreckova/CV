@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+
+const {title} = Astro.props;
+
+import logo from "@assetsLocal/logo.svg";
+
+import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/x-icon" href={logo.src} id="tabFavicon">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Katarína Korečková</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Varta:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+	</head>
+	<body class="bg-bg w-full">
+        <div class="w-[595px] h-[842px] mx-auto mt-12 bg-white px-7 pt-12">
+            <slot/>
+        </div>
+	</body>
+</html>
