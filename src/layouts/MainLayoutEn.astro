@@ -5,11 +5,11 @@ const {title} = Astro.props;
 
 import logo from "@assetsLocal/logo.svg";
 
-import Navbar from "@components/Navbar.astro";
-import Footer from "@components/Footer.astro";
+import NavbarEn from "@components/NavbarEn.astro";
+import FooterEn from "@components/FooterEn.astro";
 ---
 
-<html lang="sk">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" type="image/x-icon" href={logo.src} id="tabFavicon">
@@ -24,11 +24,11 @@ import Footer from "@components/Footer.astro";
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
 	</head>
 	<body>
-        <Navbar/>
+        <NavbarEn/>
         <main class="my-14 content min-h-[80vh]">
 		    <slot />
         </main>
-        <Footer/>
+        <FooterEn/>
         
         <script src="../scripts/burger-menu.js"></script>
 	</body>

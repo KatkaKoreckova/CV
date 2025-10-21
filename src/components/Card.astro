@@ -2,7 +2,7 @@
 import { getEntryBySlug } from 'astro:content';
 import { Image } from 'astro:assets';
 
-const {slug, type, category} = Astro.props;
+const {slug, type, category, lang} = Astro.props;
 
 const project = (await getEntryBySlug('projects', slug)).data;
 
@@ -14,6 +14,10 @@ if (type == "uxui") {
 } else {
     color = "orange";
 }
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const langPrefix = lang === "en" ? "/en" : "";
+const href = `${base}${langPrefix}/${category}/${slug}`;
 
 ---
 
@@ -28,7 +32,7 @@ if (type == "uxui") {
     />
     <div class={`w-full bg-dark text-lime text-${color} absolute bottom-0 rounded-b-3xl px-4 py-2 grid grid-cols-9 gap-2`}>
         <span class="col-span-7 title text-sm">{project.title}</span>
-        <a href={`${import.meta.env.BASE_URL}/${category}/${slug}`} class="material-symbols-sharp h-min self-center col-span-2 mx-auto hover:translate-x-1">
+        <a href={href} class="material-symbols-sharp h-min self-center col-span-2 mx-auto hover:translate-x-1">
             arrow_forward
         </a>
     </div>

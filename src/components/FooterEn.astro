@@ -1,0 +1,23 @@
+---
+import github from "@assetsLocal/icons/github.svg";
+import linkedin from "@assetsLocal/icons/linkedin.svg";
+import mail from "@assetsLocal/icons/mail.svg";
+import link from "@assetsLocal/icons/link.svg";
+
+import ContactLink from "@components/ContactLink.astro";
+---
+
+<div id="contact" class="w-full bg-beige py-6 border-t-2 border-dark">
+    <div class="content md:grid md:grid-cols-2 grid-cols-1 gap-2">
+        <h1>Contact</h1>
+        <div class="flex flex-col space-y-2">
+            <ContactLink href="https://github.com/KatkaKoreckova" title="Github" icon={github.src} alt="github icon" />
+            <ContactLink href="https://www.linkedin.com/in/katarinakoreckova/" title="LinkedIn" icon={linkedin.src} alt="linkedIn icon" />
+            <ContactLink href="mailto:k.korecko@gmail.com" title="k.korecko@gmail.com" icon={mail.src} alt="mail icon" />
+            <ContactLink href="https://www.canva.com/design/DAG2aPPmpoM/mmFFqSL2rrljW1L3C7U_Ig/view?utm_content=DAG2aPPmpoM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha3606b81a1" title="UX/UI portfólio s postupmi" icon={link.src} alt="link icon" />
+        </div>
+    </div>
+</div>
+<div class="w-full bg-dark text-pink p-2 text-xs title text-center">
+    K. Korečková 2025
+</div>

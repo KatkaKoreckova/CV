@@ -10,4 +10,8 @@ export default defineConfig({
   },
   site: 'https://katkakoreckova.github.io',
   base: 'CV',
+  i18n: {
+    locales: ["sk", "en"],
+    defaultLocale: "sk",
+  }
 });

@@ -1,0 +1,116 @@
+---
+import A4Doc from "@layouts/A4Doc.astro";
+
+import Edu from "@components/Edu.astro";
+import SkillBar from "@components/SkillBar.astro";
+
+import github from "@assetsLocal/icons/github.svg";
+import linkedin from "@assetsLocal/icons/linkedin.svg";
+import mail from "@assetsLocal/icons/mail.svg";
+import link from "@assetsLocal/icons/link.svg";
+---
+
+<A4Doc title="CV">
+    <div class="flex flex-row justify-between w-full">
+        <div class="flex flex-col space-y-2 w-[40%]">
+            <div class="flex flex-col space-y-0">
+                <h3>Katarína</h3>
+                <h2 class="text-pink uppercase">Korečková</h2>
+            </div>
+            <p class="uppercase text-sm">
+                UX/UI DESIGN, FRONT-END, grafický dizajn
+            </p>
+        </div>
+        <div class="flex flex-col space-y-2 w-[40%]">
+            <a href="https://github.com/KatkaKoreckova" target="_blank">
+                <div class="flex flex-row space-x-2 items-stretch">
+                    <img src={github.src} alt="github icon" class="h-4 self-center">
+                    <span class="self-center title text-sm">Github</span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/katarinakoreckova/" target="_blank">
+                <div class="flex flex-row space-x-2 items-stretch">
+                    <img src={linkedin.src} alt="linkedIn icon" class="h-4 self-center">
+                    <span class="self-center title text-sm">LinkedIn</span>
+                </div>
+            </a>
+            <a href="mailto:k.korecko@gmail.com" target="_blank">
+                <div class="flex flex-row space-x-2 items-stretch">
+                    <img src={mail.src} alt="mail icon" class="h-4 self-center">
+                    <span class="self-center title text-sm">k.korecko@gmail.com</span>
+                </div>
+            </a>
+            <a href="https://www.canva.com/design/DAF9cpIi4as/hUiWlwRC93rJlnO0ry2OCw/view?utm_content=DAF9cpIi4as&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb877c33695" target="_blank">
+                <div class="flex flex-row space-x-2 items-stretch">
+                    <img src={link.src} alt="link icon" class="h-4 self-center">
+                    <span class="self-center title text-sm">UX/UI portfólio s postupmi</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-2">
+        <div class="bg-beige border-2 border-dark rounded-3xl p-4 mt-4" id="skillsCard">
+				<h2 class="">Skills</h2>
+
+				<h4 class="text-lg m-0 mt-8">Grafika</h4>
+				<div class="grid grid-cols-1 gap-4 mt-2">
+					<SkillBar title="Figma" value="80" />
+					<SkillBar title="Canva" value="90" />
+					<SkillBar title="Inkscape" value="80" />
+					<SkillBar title="Adobe" value="70" />
+					<SkillBar title="Gimp" value="50" />
+					<SkillBar title="3D modelovanie a tlač" value="70" />
+				</div>
+				
+				<h4 class="text-lg m-0 mt-8">Front-end, Back-end</h4>
+				<div class="grid grid-cols-1 gap-4 mt-2">
+					<SkillBar title="C#" value="66" />
+					<SkillBar title="Java" value="66" />
+					<SkillBar title="HTML" value="80" />
+					<SkillBar title="CSS" value="90" />
+					<SkillBar title="TailwindCSS" value="71" />
+					<SkillBar title="Astro" value="50" />
+					<SkillBar title="JS" value="33" />
+					<SkillBar title="SQL" value="33" />
+					<SkillBar title=".NET" value="66" />
+					<SkillBar title="C" value="33" />
+					<SkillBar title="Python" value="33" />
+					<SkillBar title="Git" value="70" />
+					<SkillBar title="Linux" value="20" />
+					<SkillBar title="Docker" value="5" />
+					<SkillBar title="React" value="5" />
+				</div>
+
+				<h4 class="text-lg m-0 mt-8">Robotika</h4>
+				<div class="grid grid-cols-1 gap-4 mt-2">
+					<SkillBar title="Arduino / ESP32" value="70" />
+					<SkillBar title="NXT/EV3" value="100" />
+					<SkillBar title="PCB" value="20" />
+				</div>
+			</div>
+			<div class="mt-4">
+				<div class="bg-beige border-2 border-dark rounded-3xl p-4" id="workCard">
+					<h2 class="">Pracovné skúsenosti</h2>
+					
+					<div class="flex flex-col space-y-4">
+						<Edu title="Grafický dizajnér, UX/UI, Front-end" desc="od 2021, DEVITY Software" />
+						<Edu title="Organizátorka robotickej súťaže RBA" desc="od 2023, Robotický Battle na Alejovej" />
+						<Edu title="Lektorka krúžkov pre žiakov ZŠ" desc="2023 - 2025" />
+						<Edu title="Inštruktorka 3D modelovania" desc="od 2020, LSTME" />
+						<Edu title="Junior Software Engineer" desc="2022, NESS Košice" />
+					</div>
+				</div>
+
+				<div class="bg-beige border-2 border-dark rounded-3xl p-4 mt-4" id="eduCard">
+					<h2 class="">Vzdelanie</h2>
+					
+					<div class="flex flex-col space-y-4">
+						<Edu title="Informatika, Ing." desc="2023 - 2025, FEI TU Košice" />
+						<Edu title="Informatika, bc." desc="2020 - 2023, FEI TU Košice" />
+						<Edu title="LSTME" desc="2016 - 2019, IT sústredenie" />
+						<Edu title="Gymnázium" desc="2012 - 2020, Gymnázium Alejová 1, Košice" />
+					</div>
+				</div>
+			</div>
+    </div>
+</A4Doc>
