@@ -5,6 +5,6 @@ description: "Cieľom projektu bolo vytvoriť webovú stránku pre ZŠ s MŠ v K
 link: "https://www.canva.com/design/DAF9cpIi4as/hUiWlwRC93rJlnO0ry2OCw/view?utlId=hb877c33695#35"
 linkText: "Viac"
 imageDescEn: ["New website", "", "Poster templates", "Website for kindergarten", "Photo frames", "Website for elementary school", "Info banners"]
-descriptionEn: "The project’s goal was to create a website for an elementary and kindergarten school in Košice. The site is aimed not only at parents of current students but also at parents deciding where to enroll their children. In addition to the website, I created photo frames for use on the web or social media. I also designed poster templates for various occasions."
+descriptionEn: "The project’s goal was to create a website for an elementary and kindergarten school in Košice. The site is aimed not only at parents of current students, but also at parents deciding where to enroll their children. In addition to the website, I created photo frames for use on the web or social media. I also designed poster templates for various occasions."
 linkTextEn: "More"
 ---

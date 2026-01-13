@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 const { name } = Astro.params;  
 const project = (await getEntry('projects', name)).data;
 
-import MainLayout from "@layouts/MainLayout.astro";
+import MainLayoutEn from "@layouts/MainLayoutEn.astro";
 
 import Title from "@components/Title.astro";
 import Tag from "@components/Tag.astro";
@@ -26,18 +26,18 @@ import Tag from "@components/Tag.astro";
 import placeholder from "@assetsLocal/placeholder.png";
 ---
 
-<MainLayout title={project.title}>
+<MainLayoutEn title={project.title}>
     <div class="flex flex-row justify-between items-stretch">
         <Title title={project.title}/>
     </div>
 
     <p>
-        {project.description}
+        {project.descriptionEn}
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-auto mt-10">
         {
-            project.imageDesc.map((desc: string, index: number) => (
+            project.imageDescEn.map((desc: string, index: number) => (
             <div class="rounded-3xl relative">
                 <img
                 src={`/CV/projects/${name}/${index + 1}.png`}
@@ -53,4 +53,4 @@ import placeholder from "@assetsLocal/placeholder.png";
         }
     </div>
 
-</MainLayout>
+</MainLayoutEn>
