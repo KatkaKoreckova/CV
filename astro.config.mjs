@@ -9,7 +9,7 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: 'https://katkakoreckova.github.io',
-  base: '',
+  base: '/',
   i18n: {
     locales: ["sk", "en"],
     defaultLocale: "sk",
