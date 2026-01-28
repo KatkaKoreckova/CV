@@ -1,7 +1,7 @@
 ---
 title: "LSTME"
-imageDesc: ["Plagát", "Zad", "Grafika", "Grafika", "Pred"]
-description: "Pre LSTME som vytvorila balík rôznych grafík / rámikov a šablón na posty pre sociálne siete. Taktiež som k tomu vytvorila návrh tričiek / mikín ako merch a plagát."
+imageDesc: ["Plagáty", "Merch", "Grafika", "Posty", "Rámik na spoločnú fotku", "Grafika", "Darčekové poukážky"]
+description: "Pre LSTME som na základe loga a jeho farieb vytvorila brand a balík rôznych grafík a šablón na posty pre sociálne siete. Taktiež som k tomu vytvorila návrh tričiek / mikín ako merch a plagát."
 link: "https://www.instagram.com/lstme.sk/"
 linkText: "Instagram"
 imageDescEn: ["Poster", "Back", "Graphics", "Graphics", "Front"]
