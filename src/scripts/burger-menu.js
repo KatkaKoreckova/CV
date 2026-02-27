@@ -19,10 +19,6 @@ function scrollToSection(section) {
     window.location.href = section;
 };
 
-document.getElementById('services-btn').addEventListener('click', () => {
-    scrollToSection("#services");
-})
-
 document.getElementById('about-btn').addEventListener('click', () => {
     scrollToSection("#about");
 })
